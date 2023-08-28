@@ -2,7 +2,7 @@ window.onload = () => {
     let testEntityAdded = false;
     
     const el = document.querySelector("[gps-new-camera]");
-    el.geolocation.getCurrentPosition(this.showPosition);
+    
     el.addEventListener("gps-camera-update-position", e => {
         if(!testEntityAdded) {
             alert(`Got first GPS position: lon ${e.detail.position.longitude} lat ${e.detail.position.latitude}`);
@@ -15,13 +15,13 @@ window.onload = () => {
             });
             entity.setAttribute("position", {
                 x: 0, 
-                y: 160,
-                z: 0
+                y: 1,
+                z: 1
             });
             entity.setAttribute('material', { color: 'red' } );
             entity.setAttribute('gps-new-entity-place', {
-                latitude: e.detail.position.latitude + 0.001,
-                longitude: e.detail.position.longitude,
+                0.001,
+                0
             });
             document.querySelector("a-scene").appendChild(entity);
         }
