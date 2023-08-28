@@ -11,12 +11,12 @@ window.onload = () => {
             entity.setAttribute("scale", {
                 x: 100, 
                 y: 100,
-                z: 10ß0
+                z: 100
             });
             entity.setAttribute('material', { color: 'red' } );
             entity.setAttribute('gps-new-entity-place', {
-                latitude: e.detail.position.latitude - 0.001,
-                longitude: e.detail.position.longitude - 0.001
+                latitude: e.detail.position.latitude + 0.001,
+                longitude: e.detail.position.longitude
             });
             document.querySelector("a-scene").appendChild(entity);
         }
