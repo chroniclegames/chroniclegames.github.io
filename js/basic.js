@@ -20,8 +20,8 @@ window.onload = () => {
             });
             entity.setAttribute('material', { color: 'red' } );
             entity.setAttribute('gps-new-entity-place', {
-                0.001,
-                0
+                latitude: 0.001,
+                longitude: 0
             });
             document.querySelector("a-scene").appendChild(entity);
         }
