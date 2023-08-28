@@ -13,11 +13,6 @@ window.onload = () => {
                 y: 20,
                 z: 20
             });
-            entity.setAttribute("position", {
-                x: 0, 
-                y: 1,
-                z: 1
-            });
             entity.setAttribute('material', { color: 'red' } );
             entity.setAttribute('gps-new-entity-place', {
                 latitude: 0.001,
