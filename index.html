@@ -8,9 +8,9 @@
 <body>
   <model-viewer src="assets/Chair.glb" poster="assets/Chair.webp" shadow-intensity="1" ar camera-controls touch-action="pan-y" alt="A 3D model carousel">
   
-    <!-- <button slot="ar-button" id="ar-button">
+    <button slot="ar-button" id="ar-button">
       View in your space
-    </button> -->
+    </button>
   
     <div id="ar-prompt">
       <img src="assets/hand.png">
@@ -73,7 +73,7 @@
     margin: 5px;    
   }
 
-  /* #ar-button {
+  #ar-button {
     background-image: url(assets/ic_view_in_ar_new_googblue_48dp.png);
     background-repeat: no-repeat;
     background-size: 20px 20px;
@@ -104,7 +104,7 @@
 
   #ar-button:focus-visible {
     outline: 1px solid #4285f4;
-  } */
+  }
 
   @keyframes circle {
     from { transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg); }
