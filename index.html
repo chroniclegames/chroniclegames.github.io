@@ -3,7 +3,7 @@
 <!-- Import the component -->
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 
-<h1>Test View</h1>
+<h1>WebXR Demo</h1>
 
 <body>
   <model-viewer src="assets/Chair.glb" poster="assets/Chair.webp" shadow-intensity="1" ar camera-controls touch-action="pan-y" alt="A 3D model carousel">
@@ -64,9 +64,12 @@
   max-width: max-content;
   margin: auto;
   }
+
   model-viewer {
     background-color: #eee;
     overflow-x: hidden;
+    width: 80em;
+    height: 60em;    
   }
 
   #ar-button {
@@ -182,11 +185,5 @@
   .slide:focus-visible {
     outline: 1px solid #4285f4;
   }
-
-  element.style {
-    width: 80em;
-    height: 60em;
-  }
-
 
 </style>
