@@ -6,35 +6,35 @@
 <h1>Test View</h1>
 
 <body>
-
-</body>
-<model-viewer src="assets/Chair.glb" poster="assets/Chair.webp" shadow-intensity="1" ar camera-controls touch-action="pan-y" alt="A 3D model carousel">
+  <model-viewer src="assets/Chair.glb" poster="assets/Chair.webp" shadow-intensity="1" ar camera-controls touch-action="pan-y" alt="A 3D model carousel">
   
-  <button slot="ar-button" id="ar-button">
-    View in your space
-  </button>
+    <button slot="ar-button" id="ar-button">
+      View in your space
+    </button>
+  
+    <div id="ar-prompt">
+      <img src="assets/hand.png">
+    </div>
+  
+    <button id="ar-failure">
+      AR is not tracking!
+    </button>
+  
+    <div class="slider">
+      <div class="slides">
+        <button class="slide selected" onclick="switchSrc(this, 'Chair')" style="background-image: url('assets/Chair.webp');">
+        </button><button class="slide" onclick="switchSrc(this, 'ToyTrain')" style="background-image: url('assets/ToyTrain.webp');">        
+  
+        <!-- </button><button class="slide" onclick="switchSrc(this, 'Mixer')" style="background-image: url('../../assets/ShopifyModels/Mixer.webp');">
+  
+        </button><button class="slide" onclick="switchSrc(this, 'GeoPlanter')" style="background-image: url('../../assets/ShopifyModels/GeoPlanter.webp');">          
+        
+        </button><button class="slide" onclick="switchSrc(this, 'Canoe')" style="background-image: url('../../assets/ShopifyModels/Canoe.webp');">     -->
+      </button></div>
+    </div>
+  </model-viewer>
+</body>
 
-  <div id="ar-prompt">
-    <img src="assets/hand.png">
-  </div>
-
-  <button id="ar-failure">
-    AR is not tracking!
-  </button>
-
-  <div class="slider">
-    <div class="slides">
-      <button class="slide selected" onclick="switchSrc(this, 'Chair')" style="background-image: url('assets/Chair.webp');">
-      </button><button class="slide" onclick="switchSrc(this, 'ToyTrain')" style="background-image: url('assets/ToyTrain.webp');">        
-
-      <!-- </button><button class="slide" onclick="switchSrc(this, 'Mixer')" style="background-image: url('../../assets/ShopifyModels/Mixer.webp');">
-
-      </button><button class="slide" onclick="switchSrc(this, 'GeoPlanter')" style="background-image: url('../../assets/ShopifyModels/GeoPlanter.webp');">          
-      
-      </button><button class="slide" onclick="switchSrc(this, 'Canoe')" style="background-image: url('../../assets/ShopifyModels/Canoe.webp');">     -->
-    </button></div>
-  </div>
-</model-viewer>
 
 <script type="module">
   const modelViewer = document.querySelector("model-viewer");
@@ -182,5 +182,11 @@
   .slide:focus-visible {
     outline: 1px solid #4285f4;
   }
+
+  element.style {
+    width: 80em;
+    height: 60em;
+  }
+
 
 </style>
