@@ -33,6 +33,23 @@
       </button></div>
     </div>
   </model-viewer>
+
+  <model-viewer src="assets/SM_Sofa_2.glb" poster="assets/SM_Sofa_2.png" shadow-intensity="5" ar camera-controls touch-action="pan-y" alt="A 3D model carousel">
+  
+    <button slot="ar-button" id="ar-button">
+      View in your space
+    </button>
+  
+    <div id="ar-prompt">
+      <img src="assets/hand.png">
+    </div>
+  
+    <button id="ar-failure">
+      AR is not tracking!
+    </button>
+  
+  </model-viewer>
+
 </body>
 
 
