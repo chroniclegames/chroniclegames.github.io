@@ -34,7 +34,7 @@
     </div>
   </model-viewer>
 
-  <model-viewer src="assets/SM_Sofa_2.glb" poster="assets/SM_Sofa_2.png" shadow-intensity="5" ar camera-controls touch-action="pan-y" alt="A 3D model carousel">
+  <!-- <model-viewer src="assets/SM_Sofa_2.glb" poster="assets/SM_Sofa_2.png" shadow-intensity="5" ar camera-controls touch-action="pan-y" alt="A 3D model carousel">
   
     <button slot="ar-button" id="ar-button">
       View in your space
@@ -48,7 +48,7 @@
       AR is not tracking!
     </button>
   
-  </model-viewer>
+  </model-viewer> -->
 
 </body>
 
@@ -80,14 +80,17 @@
   body {
   max-width: max-content;
   margin: auto;
+
   }
 
   model-viewer {
     background-color: #eee;
     overflow-x: hidden;
-    width: 50em;
-    height: 70em;
-    margin: 5px;    
+    width: 100%; 
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0;    
   }
 
   #ar-button {
